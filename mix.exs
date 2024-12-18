@@ -39,12 +39,12 @@ defmodule Filtrex.Mixfile do
       {:ecto, "~> 3.0"},
       {:ecto_sql, "~> 3.0"},
       {:timex, "~> 3.1"},
-      {:earmark, "~> 0.1", only: :dev},
+      {:earmark, "~> 1.0", only: :dev},
       {:ex_doc, "~> 0.11", only: :dev},
       {:inch_ex, ">= 0.0.0", only: [:dev, :docs]},
-      {:plug, "~> 1.1.2", only: :test},
-      {:ex_machina, "~> 0.6.1", only: :test},
-      {:mix_test_watch, "~> 0.3", only: :dev, runtime: false}
+      {:plug, "~> 1.0", only: :test},
+      {:ex_machina, "~> 2.0", only: :test},
+      {:mix_test_watch, "~> 1.0", only: :dev, runtime: false}
     ]
   end
 

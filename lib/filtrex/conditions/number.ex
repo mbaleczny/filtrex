@@ -64,8 +64,7 @@ defmodule Filtrex.Condition.Number do
         {:error, parse_value_type_error(float, type())}
       allowed_values == nil ->
         {:ok, float}
-      Range.range?(allowed_values) ->
-        start..final = allowed_values
+      start..final//_ = allowed_values ->
         if float >= start and float <= final do
           {:ok, float}
         else
